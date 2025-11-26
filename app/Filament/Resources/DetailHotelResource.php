@@ -49,8 +49,6 @@ class DetailHotelResource extends Resource
                     ->required(),
                 Forms\Components\FileUpload::make('image2')
                     ->image(),
-                Forms\Components\FileUpload::make('image3')
-                    ->image(),
 
                 // Tambahan untuk maps
                 Forms\Components\TextInput::make('latitude')
@@ -80,7 +78,6 @@ class DetailHotelResource extends Resource
                 Tables\Columns\TextColumn::make('alamat')->limit(30),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\ImageColumn::make('image2'),
-                Tables\Columns\ImageColumn::make('image3'),
                 Tables\Columns\TextColumn::make('latitude'),
                 Tables\Columns\TextColumn::make('longitude'),
                 Tables\Columns\TextColumn::make('created_at')

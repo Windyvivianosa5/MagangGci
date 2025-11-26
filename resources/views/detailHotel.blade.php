@@ -11,7 +11,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {{-- Foto utama --}}
             <div class="relative group overflow-hidden rounded-lg shadow-md">
-                <img class="w-full h-[530px] object-cover transition-transform duration-500 group-hover:scale-105"
+                <img class="w-full h-[130px] object-cover transition-transform duration-500 group-hover:scale-105"
                      src="{{ asset('storage/' . $hotel->image) }}"
                      alt="Main photo of {{ $hotel->name }}">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
@@ -28,14 +28,6 @@
                     </div>
                 @endif
 
-                @if($hotel->detail && $hotel->detail->image3)
-                    <div class="relative group overflow-hidden rounded-lg shadow-md">
-                        <img class="w-full h-[260px] object-cover transition-transform duration-500 group-hover:scale-105"
-                             src="{{ asset('storage/' . $hotel->detail->image3) }}"
-                             alt="Additional photo 2 of {{ $hotel->name }}">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-                    </div>
-                @endif
             </div>
         </div>
     </section>

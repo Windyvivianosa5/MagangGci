@@ -21,7 +21,7 @@
       <div class="text-center bg-gradient-to-b from-green-50 to-white pt-8 pb-6 px-6">
         <!-- Logo -->
         <div class="flex justify-center mb-3">
-          <img src="{{ asset('assets/logopkura.png') }}" alt="Logo Okura" class="h-28 w-44 object-contain">
+          <img src="{{ asset('assets/img/logo-istanasiak.png') }}" alt="Logo" class="h-28 w-44 object-contain">
         </div>
 
         <h1 class="text-3xl font-bold text-gray-800">Thank You for Registering!</h1>

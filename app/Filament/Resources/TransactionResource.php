@@ -41,7 +41,7 @@ class TransactionResource extends Resource
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('price')
-                    ->money()
+                    ->money('IDR', true)
                     ->sortable(),
                 Tables\Columns\TextColumn::make('ticket_status')
                     ->searchable(),
