@@ -87,15 +87,6 @@ Route::controller(ShoppingController::class)->group(function () {
 
 });
 
-// Route::get('/storage-link', function () {
-//     // Run artisan command
-//     Artisan::call('storage:link');
-
-//     return response()->json([
-//         'message' => 'Storage link created successfully.',
-//         'output'  => Artisan::output(),
-//     ]);
-// })->name('storage.link');
 
 
 // Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
